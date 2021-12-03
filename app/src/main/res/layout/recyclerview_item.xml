@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/round_border"
+    android:padding="5dp"
+    android:layout_marginTop="3dp"
+    android:layout_marginBottom="3dp"
+    android:layout_marginStart="5dp"
+    android:layout_marginEnd="5dp"
+    android:elevation="5dp">
+
+    <TextView
+        android:id="@+id/index"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="[공지]" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="-1dp"
+        android:layout_toStartOf="@+id/count"
+        android:layout_toEndOf="@+id/index"
+        android:text="제목~~~~~~~~~~~~" />
+
+    <TextView
+        android:id="@+id/count"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:gravity="center"
+        android:text="조회수" />
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:layout_toEndOf="@+id/index"
+        android:layout_marginEnd="10dp"
+        android:text="2021-11-26"
+        android:textSize="11sp" />
+
+    <TextView
+        android:id="@+id/author"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:layout_toEndOf="@+id/date"
+        android:text="공학교육혁신센터"
+        android:textSize="11sp" />
+
+</RelativeLayout>

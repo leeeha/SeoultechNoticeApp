@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/mark"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:padding="10dp"
+            android:src="@drawable/seoultech" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text=" 서울과기대 공지사항 알리미"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/notice1"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_margin="20dp"
+        android:text="대학 공지사항"
+        android:background="@drawable/edit_round"
+        android:elevation="10dp"
+        android:gravity="center"
+        android:textSize="25sp" />
+    <TextView
+        android:id="@+id/notice2"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:text="학사 공지"
+        android:layout_margin="20dp"
+        android:background="@drawable/edit_round"
+        android:elevation="10dp"
+        android:gravity="center"
+        android:textSize="25sp" />
+    <TextView
+        android:id="@+id/notice3"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:text="장학 공지"
+        android:layout_margin="20dp"
+        android:background="@drawable/edit_round"
+        android:gravity="center"
+        android:elevation="10dp"
+        android:textSize="25sp" />
+
+</LinearLayout>
