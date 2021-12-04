@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="author_data">
+        <item>현장실습지원센터</item>
+        <item>공학교육혁신센터</item>
+        <item>교수학습개발센터</item>
+        <item>학생상담센터</item>
+        <item>교육혁신처</item>
+        <item>대학혁신사업추진단</item>
+        <item>학생지원과</item>
+        <item>취업본부</item>
+        <item>대학일자리지원단</item>
+        <item>대외협력본부</item>
+        <item>산학협력단</item>
+        <item>ST나눔공헌단</item>
+        <item>생활관</item>
+        <item>도서관</item>
+        <item>총무과</item>
+        <item>국제교육본부</item>
+    </string-array>
+</resources>

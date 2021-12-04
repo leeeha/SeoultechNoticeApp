@@ -3,6 +3,18 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/USER/AndroidStudioProjects/ResetVersion/app/src/main/res/drawable/alarm_add.xml" value="0.26979166666666665" />
+        <entry key="..\:/Users/USER/AndroidStudioProjects/ResetVersion/app/src/main/res/drawable/notice_icon.xml" value="0.26979166666666665" />
+        <entry key="..\:/Users/USER/AndroidStudioProjects/ResetVersion/app/src/main/res/drawable/search.xml" value="0.26979166666666665" />
+        <entry key="..\:/Users/USER/AndroidStudioProjects/ResetVersion/app/src/main/res/layout/activity_author.xml" value="0.190234375" />
+        <entry key="..\:/Users/USER/AndroidStudioProjects/ResetVersion/app/src/main/res/layout/activity_intro.xml" value="0.2" />
+        <entry key="..\:/Users/USER/AndroidStudioProjects/ResetVersion/app/src/main/res/layout/activity_keword.xml" value="0.2" />
+        <entry key="..\:/Users/USER/AndroidStudioProjects/ResetVersion/app/src/main/res/layout/activity_keyword.xml" value="0.2" />
+        <entry key="..\:/Users/USER/AndroidStudioProjects/ResetVersion/app/src/main/res/layout/activity_main.xml" value="0.2" />
+        <entry key="..\:/Users/USER/AndroidStudioProjects/ResetVersion/app/src/main/res/layout/activity_notice.xml" value="0.190234375" />
+        <entry key="..\:/Users/USER/AndroidStudioProjects/ResetVersion/app/src/main/res/layout/activity_second.xml" value="0.25364583333333335" />
+        <entry key="..\:/Users/USER/AndroidStudioProjects/ResetVersion/app/src/main/res/layout/activity_start.xml" value="0.190234375" />
+        <entry key="..\:/Users/USER/AndroidStudioProjects/ResetVersion/app/src/main/res/layout/recyclerview_item.xml" value="0.25364583333333335" />
         <entry key="..\:/Users/USER/AndroidStudioProjects/WebCrawling/app/src/main/res/drawable-v24/edit_round.xml" value="0.26979166666666665" />
         <entry key="..\:/Users/USER/AndroidStudioProjects/WebCrawling/app/src/main/res/drawable/first_page.xml" value="0.26979166666666665" />
         <entry key="..\:/Users/USER/AndroidStudioProjects/WebCrawling/app/src/main/res/drawable/last_page.xml" value="0.26979166666666665" />

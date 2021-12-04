@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
@@ -7,53 +8,146 @@
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:padding="20dp"
+        android:background="@color/navy">
         <ImageView
-            android:id="@+id/mark"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:padding="10dp"
-            android:src="@drawable/seoultech" />
-
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="50dp"
+            android:src="@drawable/mark"/>
         <TextView
             android:id="@+id/title"
+            android:layout_width="0dp"
+            android:layout_weight="7"
+            android:layout_height="wrap_content"
+            android:text=" 서울과기대 공지사항 알리미"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_marginBottom="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="25dp"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/speaker"/>
+
+        <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:text=" 서울과기대 공지사항 알리미"
-            android:textSize="25sp"
-            android:textStyle="bold" />
+            android:text="  공지사항 확인하기"
+            android:textColor="@color/gray"
+            android:textStyle="bold"
+            android:textSize="25sp" />
     </LinearLayout>
 
     <TextView
         android:id="@+id/notice1"
         android:layout_width="match_parent"
         android:layout_height="70dp"
-        android:layout_margin="20dp"
-        android:text="대학 공지사항"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="15dp"
         android:background="@drawable/edit_round"
-        android:elevation="10dp"
+        android:elevation="15dp"
         android:gravity="center"
-        android:textSize="25sp" />
+        android:text="대학 공지사항"
+        android:textColor="@color/gray"
+        android:textSize="25sp"/>
+
     <TextView
         android:id="@+id/notice2"
         android:layout_width="match_parent"
         android:layout_height="70dp"
-        android:text="학사 공지"
-        android:layout_margin="20dp"
+        android:text="학사공지"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
         android:background="@drawable/edit_round"
-        android:elevation="10dp"
+        android:textColor="@color/gray"
+        android:elevation="15dp"
         android:gravity="center"
         android:textSize="25sp" />
     <TextView
         android:id="@+id/notice3"
         android:layout_width="match_parent"
         android:layout_height="70dp"
-        android:text="장학 공지"
-        android:layout_margin="20dp"
+        android:text="장학공지"
+        android:textColor="@color/gray"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
         android:background="@drawable/edit_round"
         android:gravity="center"
-        android:elevation="10dp"
+        android:elevation="15dp"
+        android:textSize="25sp" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_margin="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="10dp"
+            android:padding="5dp"
+            android:src="@drawable/notification" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=" 푸시 알림 받기"
+            android:textColor="@color/gray"
+            android:textStyle="bold"
+            android:textSize="25sp"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/alarm1"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:text="키워드 추가"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:textColor="@color/gray"
+        android:background="@drawable/edit_round"
+        android:gravity="center"
+        android:elevation="15dp"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/alarm2"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:text="작성자 추가"
+        android:textColor="@color/gray"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:background="@drawable/edit_round"
+        android:gravity="center"
+        android:elevation="15dp"
         android:textSize="25sp" />
 
 </LinearLayout>

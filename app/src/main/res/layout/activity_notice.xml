@@ -5,13 +5,12 @@
     android:layout_height="match_parent">
 
     <TextView
-        android:id="@+id/topBar"
+        android:id="@+id/topBarText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/navy"
         android:gravity="center"
         android:padding="10dp"
-        android:text="대학 공지사항"
         android:textColor="@color/white"
         android:textSize="24sp"
         android:textStyle="bold" />
@@ -23,13 +22,14 @@
         android:background="@drawable/round_border"
         android:elevation="7dp"
         android:layout_margin="5dp">
+
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
             android:src="@drawable/search" />
         <EditText
-            android:id="@+id/query"
+            android:id="@+id/edtQuery"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="검색어를 입력하세요"
@@ -37,7 +37,7 @@
     </LinearLayout>
 
     <Button
-        android:id="@+id/sortButton"
+        android:id="@+id/btnSort"
         android:layout_width="127dp"
         android:layout_height="wrap_content"
         android:layout_gravity="end"
@@ -48,12 +48,15 @@
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerview_main_list"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="0dp"
+        android:layout_weight="10"/>
 
-<!--    <androidx.viewpager.widget.ViewPager-->
-<!--        android:id="@+id/viewPager"-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="wrap_content">-->
-<!--    </androidx.viewpager.widget.ViewPager>-->
+    <Button
+        android:id="@+id/btnGoMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/navy"
+        android:textColor="@color/white"
+        android:text="메인 홈페이지 열기"/>
 
 </LinearLayout>
