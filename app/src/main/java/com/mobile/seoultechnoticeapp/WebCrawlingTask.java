@@ -67,12 +67,11 @@ public class WebCrawlingTask extends AsyncTask<String, Void, ArrayList<ItemObjec
         return list;
     }
 
-    @Override
+    @Override // 스레드 실행 후
     protected void onPostExecute(ArrayList<ItemObject> result) {
         super.onPostExecute(result);
 
-        // 스레드에서 웹 데이터 정상적으로 불러오면,
-        // 로딩 상태를 나타내는 다이얼로그 종료
+        // 스레드에서 웹 데이터 정상적으로 불러오면, 로딩 상태를 나타내는 다이얼로그 종료
         prog.dismiss();
     }
 }

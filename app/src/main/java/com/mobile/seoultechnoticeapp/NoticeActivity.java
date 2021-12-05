@@ -93,15 +93,12 @@ public class NoticeActivity extends Activity {
 
         // 조회수 기준으로 내림차순 정렬해서 보여주기
         btnSort.setOnClickListener(view -> {
-            // 원본 리스트의 모든 아이템을 newList에 복사 후 정렬하기
-            ArrayList<ItemObject> newList = new ArrayList<>(totalList);
-            Collections.sort(newList);
-
-            totalList.clear();
-            totalList.addAll(newList);
+            Collections.sort(totalList);
             recyclerAdapter.notifyDataSetChanged();
 
             Toast.makeText(NoticeActivity.this, "조회수 높은 순으로 정렬", Toast.LENGTH_SHORT).show();
+
+            // TODO: 정렬 후 다시 원래 순서대로 되돌리는 기능 구현
         });
 
         // 메인 홈페이지로 가는 버튼
@@ -128,7 +125,9 @@ public class NoticeActivity extends Activity {
         String[] initURL = new String[pageNum];
 
         // 3개의 페이지에 있는 모든 리스트 합치기
+        // TODO: 뷰페이저나 이미지 버튼으로 페이지 넘기는 방법도 다시 시도해보기
         for (int i = 0; i < pageNum; i++) {
+            // URL 중간의 페이지 번호만 바꾼다.
             initURL[i] = start + (i + 1) + end;
 
             // get()에서 반환되는 여러 개의 리스트를 하나로 합치기
@@ -147,6 +146,7 @@ public class NoticeActivity extends Activity {
                 i--;
                 // 리스트 크기가 자동으로 1씩 줄어들기 때문에
                 // 바로 다음 항목도 검사하려면 위치가 그대로여야 한다. 그래서 -- ++
+                // TODO: 더 효율적인 방법 고민해보기
             }
         }
     }
@@ -155,7 +155,7 @@ public class NoticeActivity extends Activity {
         String[] searchURL = new String[pageNum];
         String query = edtQuery.getText().toString();
 
-        if (!query.isEmpty()) {
+        if (!query.isEmpty()) { // 입력된 검색어가 있으면
             totalList.clear();
 
             // 검색 결과로 나온 3개의 리스트 합치기
@@ -177,7 +177,8 @@ public class NoticeActivity extends Activity {
                 }
             }
 
-            // 상단의 공지사항 4~6개 중에서 검색어가 포함되지 않은 것은 제거
+            // 상단의 공지사항 6개 중에서 검색어가 포함되지 않은 것은 제거
+            // TODO: 고정된 상단의 공지사항이 대학 공지사항과 장학공지는 6개인데, 학사공지는 4개
             for (int i = 0; i < 6; i++) {
                 if (!totalList.get(i).title.contains(query)) {
                     totalList.remove(i);
@@ -189,6 +190,8 @@ public class NoticeActivity extends Activity {
         }else{
             Toast.makeText(this, "검색어를 입력하세요", Toast.LENGTH_SHORT).show();
         }
+
+        // TODO: 검색 결과로 아무것도 나오지 않을 때, 예외 처리하기
     }
 
     // 리사이클러뷰 어댑터
@@ -217,7 +220,7 @@ public class NoticeActivity extends Activity {
         }
 
         @NonNull
-        @Override // 아이템 뷰를 저장하는 뷰홀더 객체 생성하여 리턴
+        @Override // 뷰홀더 객체 생성하여 리턴
         public CustomViewholder onCreateViewHolder(ViewGroup viewGroup, int viewType) {
             View view = LayoutInflater.from(viewGroup.getContext())
                     .inflate(R.layout.recyclerview_item, viewGroup, false);
