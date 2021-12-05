@@ -1,4 +1,4 @@
-package com.mobile.webcrawling;
+package com.mobile.seoultechnoticeapp;
 
 public class ItemObject implements Comparable<ItemObject> {
     String index, title, link, author, date;

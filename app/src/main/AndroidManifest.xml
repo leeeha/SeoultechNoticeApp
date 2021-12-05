@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.mobile.webcrawling">
+    package="com.mobile.seoultechnoticeapp">
 
     <uses-permission android:name="android.permission.INTERNET"/>
 
@@ -15,7 +15,7 @@
         android:theme="@style/Theme.WebCrawling">
 
         <activity
-            android:name=".IntroActivity"
+            android:name="com.mobile.seoultechnoticeapp.IntroActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -25,18 +25,18 @@
         </activity>
 
         <activity
-            android:name=".MainActivity"
+            android:name="com.mobile.seoultechnoticeapp.MainActivity"
             android:exported="true">
         </activity>
 
         <activity
-            android:name=".NoticeActivity"/>
+            android:name="com.mobile.seoultechnoticeapp.NoticeActivity"/>
 
         <activity
-            android:name=".KeywordActivity"/>
+            android:name="com.mobile.seoultechnoticeapp.KeywordActivity"/>
 
         <activity
-            android:name=".AuthorActivity"/>
+            android:name="com.mobile.seoultechnoticeapp.AuthorActivity"/>
 
     </application>
 

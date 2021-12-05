@@ -1,4 +1,4 @@
-package com.mobile.webcrawling;
+package com.mobile.seoultechnoticeapp;
 
 import org.junit.Test;
 

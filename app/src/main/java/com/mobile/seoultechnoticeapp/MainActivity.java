@@ -1,4 +1,4 @@
-package com.mobile.webcrawling;
+package com.mobile.seoultechnoticeapp;
 
 import android.app.Activity;
 import android.content.Intent;
