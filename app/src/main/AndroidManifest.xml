@@ -9,7 +9,7 @@
 
         android:allowBackup="true"
         android:icon="@drawable/mark"
-        android:label="@string/app_name"
+        android:label="서울과기대 공지사항 알리미"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.WebCrawling">

@@ -33,6 +33,7 @@ public class WebCrawlingTask extends AsyncTask<String, Void, ArrayList<ItemObjec
         ArrayList<ItemObject> list = new ArrayList<>();
 
         try {
+            // 인자로 전달 받은 URL의 html 코드를 전부 가져오기
             Document doc = Jsoup.connect(params[0]).get();
             Elements rows = doc.select("tr.body_tr");
 

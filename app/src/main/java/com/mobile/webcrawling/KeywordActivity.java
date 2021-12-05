@@ -39,6 +39,8 @@ public class KeywordActivity extends Activity {
             if(!query.isEmpty()){
                 data.add(query);
                 adapter.notifyDataSetChanged();
+
+                edtItem.setText("");
             }
             else{
                 Toast.makeText(this, "키워드를 입력하세요", Toast.LENGTH_SHORT).show();

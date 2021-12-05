@@ -100,6 +100,8 @@ public class NoticeActivity extends Activity {
             totalList.clear();
             totalList.addAll(newList);
             recyclerAdapter.notifyDataSetChanged();
+
+            Toast.makeText(NoticeActivity.this, "조회수 높은 순으로 정렬", Toast.LENGTH_SHORT).show();
         });
 
         // 메인 홈페이지로 가는 버튼
@@ -107,14 +109,17 @@ public class NoticeActivity extends Activity {
             if(topBarText.getText().equals("대학 공지사항")){
                 Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.seoultech.ac.kr/service/info/notice/"));
                 startActivity(intent);
+                Toast.makeText(NoticeActivity.this, "대학 공지사항으로 이동", Toast.LENGTH_SHORT).show();
             }
             else if(topBarText.getText().equals("학사공지")){
                 Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.seoultech.ac.kr/service/info/matters/"));
                 startActivity(intent);
+                Toast.makeText(NoticeActivity.this, "학사공지로 이동", Toast.LENGTH_SHORT).show();
             }
             else{ // 장학공지
                 Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.seoultech.ac.kr/service/info/janghak/"));
                 startActivity(intent);
+                Toast.makeText(NoticeActivity.this, "장학공지로 이동", Toast.LENGTH_SHORT).show();
             }
         });
     }
@@ -237,6 +242,7 @@ public class NoticeActivity extends Activity {
                     // 암시적 인텐트 (기본 웹브라우저 띄우기)
                     Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(items.get(pos).link));
                     startActivity(browserIntent);
+                    Toast.makeText(NoticeActivity.this, "click " + holder.title.getText(), Toast.LENGTH_SHORT).show();
                 }
             });
         }
