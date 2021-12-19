@@ -42,6 +42,7 @@ public class AuthorActivity extends Activity {
         });
 
         btnDialog.setOnClickListener(view -> {
+            // Builder에 getApplicationContext() 대신에 AuthorActivity.this 전달하기
             AlertDialog.Builder dlg = new AlertDialog.Builder(AuthorActivity.this);
             dlg.setTitle("공지사항이 자주 올라오는 곳들입니다!");
 
